@@ -110,8 +110,8 @@ function assignImage(name,x,y){
         x=n%4;
         y=Math.floor(n/4);
         activeCard.style.transform = 'rotateY(90deg)';
-        assignImage(s,x,y);
         setTimeout(function() {
+            assignImage(s,x,y);
             activeCard.style.border = 'solid 4px yellow';
             activeCard.style.transform = 'rotateY(0deg)';
         }, 300);
