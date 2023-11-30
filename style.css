@@ -1,0 +1,67 @@
+:root{
+    --tdsize: 12rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+}
+.gombok{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+    font-size: 21px;
+    justify-content: space-between; 
+    padding-left: 30%; 
+    padding-right: 30%;
+}
+.gombok div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 90px;
+    height: 40px;
+}
+.reset{
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.reset:hover{
+    border-color: white;
+}
+.reset img{
+    width: 30px;
+}
+.container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,150px); /* 4 oszlop */
+    grid-template-rows: repeat(4, 150px);    /* 4 sor */
+    gap: 8px;                              /* térköz a cellák között */
+    padding: 8px;                          /* térköz a grid és a környező elemek között */
+}
+
+.card {
+    border-radius: 10px;
+    background-size: cover;
+    transition: 0.3s;
+    background-image: url(hatter.png);
+}
+.card:hover{
+    rotate: 5deg ;
+    transform: translate(20px, 7px);
+}
