@@ -62,6 +62,7 @@ h2{
     background-image: url(hatter.png);
 }
 .card:hover{
-    rotate: 5deg ;
-    transform: translate(20px, 7px);
+    translate: 20px 5px;
+    rotate: 5deg;
+    border: rgb(24, 91, 192) 4px solid;
 }

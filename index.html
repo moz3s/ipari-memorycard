@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Memóriajáték</title>
 </head>
-<body onload="initCards(), shuffleCards()">
+<body>
 
     <main>
         <h2>Ipari Májnkreft memóriajáték</h2>
         <div class="gombok">
-            <div class="reset" onclick="reset()">RESET<img src="reset.png" alt=""></div>&nbsp;&nbsp
-            <div class="score">Pontszámod: </div>
+            <div class="reset" onclick="reset_game()">RESET<img src="reset.png" alt=""></div>&nbsp;&nbsp
+            <div id="timer"></div>
         </div>
         <div class="container">
             <div class="card" id="card0"></div>
