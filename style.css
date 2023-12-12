@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(wood.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
