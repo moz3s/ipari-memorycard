@@ -205,7 +205,9 @@ else
     {
         timercnt=0;
     }
-painttimer();
+if(card_cnt<8){
+    painttimer();
+}
 switch (step)
         {
         case 0:    //inicializáció, tömbök létrehozása   
