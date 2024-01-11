@@ -4,11 +4,13 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(wood.jpg);
+    background-image: url(memocards/wood.jpg);
     background-repeat: repeat-y;
     background-size: cover;
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    
 }
 h2{
     text-align: center;
@@ -59,10 +61,34 @@ h2{
     border-radius: 10px;
     background-size: cover;
     transition: 0.3s;
-    background-image: url(hatter.png);
+    background-image: url(memocards/hatter.png);
 }
 .card:hover{
     translate: 20px 5px;
     rotate: 5deg;
     border: rgb(24, 91, 192) 4px solid;
+}
+#scoreboard{
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(11, 50, 102, 0.747);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scoreboardbef{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.scoreboardaft{
+    opacity: 1;
+    top: 35%;
+    width: 60%;
+    max-width: 500px;
+    height: fit-content;
+    transition: 2s;
+    padding: 60px;
 }

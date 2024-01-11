@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="memocards/favicon.png" type="image/x-icon">
     <title>Memóriajáték</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <main>
         <h2>Ipari Májnkreft memóriajáték</h2>
         <div class="gombok">
-            <div class="reset" onclick="reset_game()">RESET<img src="reset.png" alt=""></div>&nbsp;&nbsp
+            <div class="reset" onclick="reset_game()">RESET<img src="memocards/reset.png" alt=""></div>&nbsp;&nbsp
             <div id="timer"></div>
         </div>
         <div class="container">
@@ -33,12 +33,22 @@
             <div class="card" id="card14"></div>
             <div class="card" id="card15"></div>
         </div>
+        <div style="display: flex; justify-content: center;">
+            <div id="scoreboard" class="scoreboardbef">
+               <div style="text-align: center;">
+                <div>Idő: <div id="yourtime"></div></div>
+                <div>Kattintások száma: <div id="yourclicks"></div></div>
+                <br>
+                <div>Pontszámod: <div id="yourscore"></div></div>
+               </div>
+            </div>
+        </div>
     </main>
 
 
 
 
 
-    <script src="script.js"></script>   
+    <script src="memoscript .js"></script>   
 </body>
 </html>
