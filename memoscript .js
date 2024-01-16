@@ -183,7 +183,7 @@ function painttimer(){
 
 
 function paintscoreboard(){
-    finalscore = totalseconds -1;
+    finalscore = totalseconds -1 + card_clicked_cnt;
     yourtime.innerText = timer_disp.innerHTML;
     yourclicks.innerText = card_clicked_cnt;
     yourscore.innerText = finalscore;
